@@ -1,0 +1,37 @@
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+</style>
+
+<div class="projectPage">
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="" class="navbar-link">Save Translation</a>
+            </li>
+
+            <li class="navbar-item navbar-right">
+                <a href="" class="navbar-link" data-popover="#options">Options</a>
+                <div id="options" class="popover">
+                    <ul class="popover-list">
+                        <li class="popover-item">
+                            <a href="" class="popover-link" id="setText">Set Text to Translate</a>
+                            <a href="" class="popover-link" id="addPwd">Add Password to the Project</a>
+                            <a href="" class="popover-link">Set Text to Translate</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="navbar-item navbar-right">
+                <a href="" class="navbar-link">Users <span id="connectedUsers">0</span></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="editor" id="editor" contenteditable="true"></div>
+    <div class="editor" id="textBeingTranslated">
+        {{text}}
+
+    </div>
+</div>
